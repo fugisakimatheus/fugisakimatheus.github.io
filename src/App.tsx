@@ -1,8 +1,15 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+
+import Profile from 'pages/profile'
+
+import store from 'store';
 
 function App() {
   return (
-    <h1>Hello World!</h1>
+    <Provider store={store}>
+      <Profile />
+    </Provider>
   );
 }
 
